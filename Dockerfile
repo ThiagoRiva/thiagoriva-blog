@@ -16,22 +16,7 @@ RUN hugo --minify --gc
 FROM nginx:alpine
 
 # Copy the built site from the builder stage to the Nginx html directory
-COPY --from=builder /src/public /usr/share/nginx/html/blog
-
-# Create a custom nginx config to serve from /blog
-RUN echo 'server { \
-    listen 80; \
-    server_name _; \
-    \
-    location / { \
-    return 301 /blog; \
-    } \
-    \
-    location /blog/ { \
-    alias /usr/share/nginx/html/blog/; \
-    try_files $uri $uri/ /blog/index.html; \
-    } \
-    }' > /etc/nginx/conf.d/default.conf
+COPY --from=builder /src/public /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
