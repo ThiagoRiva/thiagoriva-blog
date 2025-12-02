@@ -48,6 +48,11 @@ params:
     displayTitle: true
     displayLogo: false
 
+  theme:
+    # Options: light, dark, auto (follows system preference)
+    default: light
+    displayToggle: true
+
   footer:
     displayCopyright: false
     displayPoweredBy: true
