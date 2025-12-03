@@ -1,15 +1,8 @@
 ---
-title: ThiagoRiva's Blog
+title: Blog
 toc: false
-layout: blog-home
 ---
 
-<br>
-Bem-vindo ao meu blog! Aqui compartilho conhecimento sobre tecnologias e desenvolvimento.
+Posts e reflexões sobre tecnologia e desenvolvimento.
 
-Escolha um tópico para explorar:
-
-{{< cards >}}
-{{< card link="backend" title="Backend" icon="server" subtitle="Node.js, Golang e mais" >}}
-{{< card link="linux" title="Linux" icon="terminal" subtitle="Comandos e mais" >}}
-{{< /cards >}}
+> 💡 **Dica:** Para conteúdo estruturado e referência rápida, acesse a seção [Estudos](/docs).
