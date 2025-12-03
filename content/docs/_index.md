@@ -1,17 +1,12 @@
 ---
-title: Documentation
+title: Base de Conhecimento
+toc: false
 ---
 
-This is a demo of the theme's documentation layout.
+Bem-vindo à minha base de conhecimento! Aqui organizo meus estudos e anotações sobre desenvolvimento.
 
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+{{< cards >}}
+{{< card link="linguagens" title="Linguagens" icon="code" subtitle="Go, Node.js, Python e mais" >}}
+{{< card link="linux" title="Linux" icon="terminal" subtitle="Comandos e administração" >}}
+{{< card link="cheatsheets" title="Cheatsheets" icon="document-text" subtitle="Referência rápida" >}}
+{{< /cards >}}
