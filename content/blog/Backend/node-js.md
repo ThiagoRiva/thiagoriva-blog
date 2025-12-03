@@ -2,7 +2,7 @@
 title: Node.js
 weight: 2
 toc: true
-editURL: "https://github.com/ThiagoRiva/blog.thiagoriva.com/edit/main/content/blog/Backend/node-js.md"
+editURL: "https://github.com/ThiagoRiva/thiagoriva-blog/edit/main/content/blog/Backend/node-js.md"
 ---
 
 ## O que é Node.js?

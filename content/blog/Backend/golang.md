@@ -2,6 +2,7 @@
 title: Golang
 weight: 1
 toc: true
+editURL: "https://github.com/ThiagoRiva/thiagoriva-blog/edit/main/content/blog/Backend/golang.md"
 ---
 
 ## O que é Golang?
