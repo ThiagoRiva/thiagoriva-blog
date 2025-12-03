@@ -1,0 +1,16 @@
+/* Ocultar lista automática de posts na página /blog/ */
+
+/* Oculta o container de artigos (grid) */
+div.hx-mt-12 {
+  display: none !important;
+}
+
+/* Oculta elementos article que não sejam dentro de cards */
+article.hx-group.hx-flex {
+  display: none !important;
+}
+
+/* Mantém apenas o conteúdo direto (cards) */
+.hextra-cards {
+  display: grid !important;
+}
