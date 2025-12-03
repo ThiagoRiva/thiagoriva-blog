@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: blog.thiagoriva.com
 baseURL: "https://blog.thiagoriva.com/"
 
 # import hextra as module
@@ -19,8 +19,8 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Blog
+      pageRef: /blog
       weight: 1
     - name: About
       pageRef: /about
@@ -42,11 +42,31 @@ menu:
       url: "https://twitter.com/tpbriva"
       params:
         icon: x-twitter
+    - name: RSS
+      weight: 7
+      url: "https://blog.thiagoriva.com/index.xml"
+      params:
+        icon: rss
+    - identifier: sdk
+      name: SDK
+    - identifier: python
+      name: Python ↗
+      url: https://python.org
+      parent: sdk
+    - identifier: go
+      name: Go
+      url: https://go.dev
+      parent: sdk
 
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: favicon.ico # Arquivo em static/favicon-32x32.png
+      link: /
+      width: 32
+      height: 32
 
   theme:
     # Options: light, dark, auto (follows system preference)
@@ -59,4 +79,27 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/ThiagoRiva"
+    base: "https://github.com/ThiagoRiva/blog.thiagoriva.com/edit/main/content/"
+
+  # Parse Git commit
+  enableGitInfo: true
+
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  blog:
+    list:
+      displayTags: true
+    toc:
+      displayTags: true
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      tokenize: forward
+      # enable search on mobile
+      mobile: true
