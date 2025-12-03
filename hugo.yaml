@@ -103,3 +103,13 @@ params:
       tokenize: forward
       # enable search on mobile
       mobile: true
+
+  comments:
+    enable: false
+    type: giscus
+
+    giscus:
+      repo: ThiagoRiva/thiagoriva-blog
+      repoId: R_kgDOQhMwYA
+      category: "General"
+      categoryId: DIC_kwDOQhMwYM4CzU24
