@@ -1,9 +1,19 @@
 ---
 title: Node.js
 weight: 1
+date: 2025-12-02
+author: Thiago Riva
+tags: ["nodejs", "javascript", "backend", "full-stack", "performance"]
 toc: true
+comments: true
 editURL: "https://github.com/ThiagoRiva/thiagoriva-blog/edit/main/content/blog/Backend/node-js.md"
 ---
+
+{{< badge "JavaScript" >}}
+{{< badge "Backend" >}}
+{{< badge "Full-Stack" >}}
+{{< badge "Performance" >}}
+{{< badge content="Releases" link="https://github.com/nodejs/node/releases" icon="github" >}}
 
 ## O que é Node.js?
 

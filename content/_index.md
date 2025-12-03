@@ -1,5 +1,5 @@
 ---
-title: ThiagoRiva's Blog
+title: Hi there! 😉
 toc: false
 ---
 
@@ -12,6 +12,6 @@ Este espaço foi pensado para ser simples e funcional, sem excesso de informaç�
 ## Explore
 
 {{< cards >}}
-{{< card link="docs" title="Docs" icon="book-open" >}}
+{{< card link="blog" title="Blog" icon="rss" >}}
 {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}

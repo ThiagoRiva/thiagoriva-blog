@@ -1,7 +1,12 @@
 ---
 title: Golang
 weight: 2
+date: 2025-12-02
+author: Thiago Riva
+tags: ["golang", "backend", "full-stack", "performance"]
 toc: true
+comments: true
+width: normal
 editURL: "https://github.com/ThiagoRiva/thiagoriva-blog/edit/main/content/blog/Backend/golang.md"
 ---
 
