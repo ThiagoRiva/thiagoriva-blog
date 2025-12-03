@@ -79,7 +79,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/ThiagoRiva/blog.thiagoriva.com/edit/main/content/"
+    base: "https://github.com/ThiagoRiva/thiagoriva-blog/edit/main/content/"
 
   # Parse Git commit
   enableGitInfo: true
