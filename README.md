@@ -1,79 +1,103 @@
-# Hextra Starter Template
+# 📚 ThiagoRiva - Base de Conhecimento
 
-[![Deploy Hugo site to Pages](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml/badge.svg)](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
-![Vercel Deployment Status](https://img.shields.io/github/deployments/imfing/hextra-starter-template/production?logo=vercel&logoColor=white&label=vercel&labelColor=black&link=https%3A%2F%2Fhextra-starter-template.vercel.app%2F)
+Meu repositório pessoal de estudos sobre desenvolvimento de software.
 
+🌐 **Site:** [blog.thiagoriva.com](https://blog.thiagoriva.com)
 
-🐣 Minimal template for getting started with [Hextra](https://github.com/imfing/hextra)
+## 📁 Estrutura
 
-![hextra-template](https://github.com/imfing/hextra-starter-template/assets/5097752/c403b9a9-a76c-47a6-8466-513d772ef0b7)
-
-[🌐 Demo ↗](https://imfing.github.io/hextra-starter-template/)
-
-## Quick Start
-
-Use this template to create your own repository:
-
-<img src="https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp" width=400 />
-
-You can also quickly start developing using the following online development environment:
-
-- [GitHub Codespaces](https://github.com/codespaces)
-
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imfing/hextra-starter-template)
-
-    Create a new codespace and follow the [Local Development](#local-development) to launch the preview
-
-
-## Deployment
-
-### GitHub Pages
-
-A GitHub Actions workflow is provided in [`.github/workflows/pages.yaml`](./.github/workflows/pages.yaml) to [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/) for free. 
-
-For details, see [Publishing with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
-
-Note: in the settings, make sure to set the Pages deployment source to **GitHub Actions**:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/99676430-884e-42ab-b901-f6534a0d6eee" width=600 />
-
-[Run the workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if it's not triggered automatically.
-
-### Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/imfing/hextra-starter-template)
-
-### Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimfing%2Fhextra-starter-template&env=HUGO_VERSION)
-
-Override the configuration:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/e2e3cecd-c884-47ec-b064-14f896fee08d" width=600 />
-
-## Local Development
-
-Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](https://golang.org/doc/install) and [Git](https://git-scm.com)
-
-```shell
-# Clone the repo
-git clone https://github.com/imfing/hextra-starter-template.git
-
-# Change directory
-cd hextra-starter-template
-
-# Start the server
-hugo mod tidy
-hugo server --logLevel debug --disableFastRender -p 1313
+```
+content/
+├── docs/                    # Base de Conhecimento
+│   ├── linguagens/          # Linguagens de programação
+│   │   ├── golang/          # Go: fundamentos e patterns
+│   │   └── nodejs/          # Node.js: fundamentos
+│   ├── linux/               # Linux e terminal
+│   │   ├── comandos.md      # Comandos essenciais
+│   │   └── shell-scripts.md # Automação com Bash
+│   └── cheatsheets/         # Referência rápida
+│       ├── linux.md         # Comandos Linux
+│       └── git.md           # Comandos Git
+└── blog/                    # Posts e reflexões
 ```
 
-### Update theme
+## 🛠️ Tecnologias
 
-```shell
+- **[Hugo](https://gohugo.io/)** - Gerador de sites estáticos
+- **[Hextra](https://github.com/imfing/hextra)** - Tema de documentação
+- **[Netlify](https://www.netlify.com/)** - Hospedagem
+
+## 🚀 Desenvolvimento Local
+
+### Pré-requisitos
+
+- [Hugo Extended](https://gohugo.io/installation/) (v0.112.0+)
+- [Go](https://golang.org/doc/install) (v1.21+)
+- [Git](https://git-scm.com)
+
+### Executar
+
+```bash
+# Clonar repositório
+git clone https://github.com/ThiagoRiva/thiagoriva-blog.git
+cd thiagoriva-blog
+
+# Instalar dependências do tema
+hugo mod tidy
+
+# Iniciar servidor de desenvolvimento
+hugo server
+```
+
+Acesse `http://localhost:1313`
+
+## 📝 Adicionar Conteúdo
+
+### Novo documento de estudo
+
+```bash
+hugo new docs/linguagens/python/fundamentos.md
+```
+
+### Novo post no blog
+
+```bash
+hugo new blog/meu-post.md
+```
+
+## 🔄 Atualizar Tema
+
+```bash
 hugo mod get -u
 hugo mod tidy
 ```
 
-See [Update modules](https://gohugo.io/hugo-modules/use-modules/#update-modules) for more details.
+## 📦 Build para Produção
 
+```bash
+hugo --minify
+```
+
+Os arquivos serão gerados em `public/`.
+
+## 📖 Tópicos de Estudo
+
+### Linguagens
+- [x] Golang - Fundamentos e Patterns
+- [x] Node.js - Fundamentos
+- [ ] Python
+- [ ] TypeScript
+
+### DevOps
+- [ ] Docker
+- [ ] Kubernetes
+- [ ] CI/CD
+
+### Banco de Dados
+- [ ] PostgreSQL
+- [ ] Redis
+- [ ] MongoDB
+
+---
+
+Feito com ☕ por [Thiago Riva](https://github.com/ThiagoRiva)
