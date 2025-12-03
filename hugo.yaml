@@ -19,31 +19,34 @@ markup:
 
 menu:
   main:
+    - name: Estudos
+      pageRef: /docs
+      weight: 1
     - name: Blog
       pageRef: /blog
-      weight: 1
+      weight: 2
     - name: About
       pageRef: /about
-      weight: 2
+      weight: 3
     - name: Contact ↗
       url: "https://github.com/ThiagoRiva"
-      weight: 3
-    - name: Search
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 6
       url: "https://github.com/ThiagoRiva"
       params:
         icon: github
     - name: Twitter
-      weight: 6
+      weight: 7
       url: "https://twitter.com/tpbriva"
       params:
         icon: x-twitter
     - name: RSS
-      weight: 7
+      weight: 8
       url: "https://blog.thiagoriva.com/index.xml"
       params:
         icon: rss
